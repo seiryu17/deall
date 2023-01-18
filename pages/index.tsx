@@ -92,7 +92,9 @@ export default function Home(props: IProps) {
     if (searchVal === "") {
       setCurrPage(1);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchVal]);
+
   return (
     <LayoutComponent activeMenuKey="1">
       <Row style={{ width: "100%" }} justify="end" gutter={[8, 8]}>

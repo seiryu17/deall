@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import LayoutComponent from "../../src/component/layout";
-import { Button, Col, Input, Pagination, Row, Table } from "antd";
+import { Button, Col, Row, Table } from "antd";
 import { ColumnsType } from "antd/es/table";
-import useDebounce from "../../src/utils/debounce";
 import ICart from "../../src/constant/cart";
 import IProduct from "../../src/constant/product";
 import Link from "next/link";

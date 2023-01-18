@@ -68,8 +68,8 @@ function BrandDetail(props: IProps) {
       {[
         { label: "Amount of items", value: selectedItems.length },
         { label: "Category", value: selectedItems[0].category },
-      ].map((x) => (
-        <Row>
+      ].map((x, index) => (
+        <Row key={index}>
           <Col span={mq.xs ? 12 : 3}>
             <Typography.Text>{x.label}</Typography.Text>
           </Col>
